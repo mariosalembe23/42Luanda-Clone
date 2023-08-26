@@ -2,7 +2,7 @@
   <header class="w-full h-screen header relative">
     <div class="mask">
       <div
-        class="navbar fixed top-0 left-0 right-0 w-full h-16 p-3 md:p-5 flex items-center justify-between lg:justify-around"
+        class="navbar z-20 transition-all fixed top-0 left-0 right-0 w-full h-16 p-3 md:p-5 flex items-center justify-between lg:justify-around"
       >
         <div>
           <a href="#" class="logo text-white font-semibold text-xl"
@@ -62,7 +62,10 @@
                   >
                     <i class="bi bi-instagram"></i>
                   </a>
-                  <a href="#" class="text-cyan-100  inline-block md:hidden transition-all hover:text-cyan-300">
+                  <a
+                    href="#"
+                    class="text-cyan-100 inline-block md:hidden transition-all hover:text-cyan-300"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -99,7 +102,9 @@
               programação disputado pelas melhores empresas.
             </p>
           </div>
-          <div class="flex md:flex-row flex-col items-center justify-center mt-5 gap-3">
+          <div
+            class="flex md:flex-row flex-col items-center justify-center mt-5 gap-3"
+          >
             <a
               href="#"
               class="bg-cyan-300 w-full md:w-40 rounded-md flex items-center justify-center py-3 px-3 text-zinc-950 font-semibold transition-all hover:bg-cyan-200"
@@ -119,7 +124,27 @@
   </header>
 </template>
 
-<script></script>
+<script setup>
+window.addEventListener("load", () => {
+  const navbar = document.querySelector(".navbar");
+
+  if (!navbar) {
+    return;
+  }
+
+  const scrollNavbarAction = () => {
+    if (window.scrollY === 0) {
+      navbar.classList.remove("navbarScroll");
+    } else {
+      navbar.classList.add("navbarScroll");
+    }
+  };
+
+  scrollNavbarAction()
+
+  document.addEventListener("scroll", scrollNavbarAction)
+});
+</script>
 
 <style scoped>
 .iconFloat {
