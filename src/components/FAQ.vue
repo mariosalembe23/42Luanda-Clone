@@ -3,10 +3,10 @@ import Accordion from "./Accordion.vue";
 import TutorialCard from "./TutorialCard.vue";
 </script>
 <template>
-  <section>
+  <section class="w-full" id="FAQ">
     <div class="text-center mt-10 p-5">
-      <h2 class="text-zinc-200 text-4xl font-bold selection">FAQ</h2>
-      <h6 class="pt-3 text-zinc-400 text-xl font-semibold">
+      <h2 class="text-zinc-200 text-3xl md:text-4xl font-bold selection">FAQ</h2>
+      <h6 class="pt-3 text-zinc-400 md:text-xl font-semibold">
         Tira as tuas dúvidas e prepara-te para fazeres parte da 42 Luanda!
       </h6>
     </div>
@@ -56,7 +56,7 @@ import TutorialCard from "./TutorialCard.vue";
     </aside>
 
     <!-- PROCESSO DE SELEÇÃO -->
-    <h2 class="pt-8 text-zinc-200 text-center text-4xl font-bold selection">
+    <h2 class="pt-8 text-zinc-200 text-center text-2xl md:text-4xl font-bold selection">
       Processo de Seleção
     </h2>
     <div class="mt-3 max-w-5xl w-full p-5 grid grid-cols-1 m-auto">

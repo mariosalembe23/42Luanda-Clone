@@ -3,9 +3,9 @@ import VantagensCard from "./VantagensCard.vue";
 </script>
 
 <template>
-  <section class="w-full">
+  <section class="w-full" id="vantagens">
     <div class="text-center mt-8">
-      <h2 class="text-zinc-200 text-4xl font-bold title">Quem Faz Enter, Faz Certo!</h2>
+      <h2 class="text-zinc-200 text-3xl md:text-4xl font-bold title">Quem Faz Enter, Faz Certo!</h2>
       <div class="w-16 rounded-md mx-auto mt-5 bg-cyan-300 h-1"></div>
       <!-- <p>Quem faz Enter, Faz Certo!</p> -->
     </div>
@@ -27,7 +27,7 @@ import VantagensCard from "./VantagensCard.vue";
         text="Na 42 Luanda, vais desenvolver habilidades de resolução de problemas, com criatividade, determinação e trabalho em equipa."
       />
       <VantagensCard
-        iconName="bi bi-code-square iconVantagem text-white"
+        iconName="bi bi-lightbulb-fill iconVantagem text-white"
         tittle="Oportunidades sem Medida!"
         text="A partir de 18 meses de formação, os alunos podem participar em projectos de programação em empresas parceiras da 42 Luanda."
       />

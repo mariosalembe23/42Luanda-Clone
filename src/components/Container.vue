@@ -6,6 +6,9 @@
     <Comunidade/>
     <FAQ/>
   </main>
+  <footer>
+    <Footer/>
+  </footer>
 </template>
 
 <script>
@@ -13,6 +16,7 @@ import Header from "./Header.vue";
 import Topicos from "./Topicos.vue";
 import Vantagens from "./Vantagens.vue";
 import Comunidade from "./Comunidade.vue";
+import Footer from "./Footer.vue";
 import FAQ from './FAQ.vue'
 
 export default {
@@ -21,7 +25,8 @@ export default {
     Topicos,
     Vantagens,
     Comunidade,
-    FAQ
+    FAQ,
+    Footer
   },
 };
 </script>

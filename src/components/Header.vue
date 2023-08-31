@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full h-screen header relative">
+  <header class="w-full h-screen header relative" id="sobre">
     <div class="mask">
       <div
         class="navbar z-20 transition-all fixed top-0 left-0 right-0 w-full h-16 p-3 md:p-5 flex items-center justify-between lg:justify-around"
@@ -14,30 +14,30 @@
             <ul class="flex items-center space-x-4">
               <li>
                 <a
-                  href="#"
+                  href="#topicos"
                   class="navbarLink md:inline-block hidden font-medium text-white transition-all hover:text-cyan-200"
                   >Sobre</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#vantagens"
                   class="navbarLink md:inline-block hidden font-medium text-white transition-all hover:text-cyan-200"
                   >Vantagens</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#comunidade"
                   class="navbarLink md:inline-block hidden font-medium text-white transition-all hover:text-cyan-200"
                   >Comunidade</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#FAQ"
                   class="navbarLink md:inline-block hidden font-medium text-white transition-all hover:text-cyan-200"
-                  >Ajuda</a
+                  >FAQ</a
                 >
               </li>
               <li>
@@ -62,8 +62,8 @@
                   >
                     <i class="bi bi-instagram"></i>
                   </a>
-                  <a
-                    href="#"
+                  <button
+                    @click="OpenOffCanvas"
                     class="text-cyan-100 inline-block md:hidden transition-all hover:text-cyan-300"
                   >
                     <svg
@@ -80,7 +80,7 @@
                         d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                       />
                     </svg>
-                  </a>
+                  </button>
                 </div>
               </li>
             </ul>
@@ -122,9 +122,12 @@
     <!-- ICON FLUTUANT -->
     <i class="bi bi-chevron-double-down text-white absolute iconFloat"> </i>
   </header>
+
+  <offcanvas />
 </template>
 
 <script setup>
+import Offcanvas from "./Offcanvas.vue";
 window.addEventListener("load", () => {
   const navbar = document.querySelector(".navbar");
 
@@ -140,13 +143,20 @@ window.addEventListener("load", () => {
     }
   };
 
-  scrollNavbarAction()
+  scrollNavbarAction();
 
-  document.addEventListener("scroll", scrollNavbarAction)
+  document.addEventListener("scroll", scrollNavbarAction);
 });
+function OpenOffCanvas() {
+  const offCanvas = document.querySelector(".offcanvas");
+
+  offCanvas.classList.add("showOffCanvas");
+  document.body.style.overflow = 'hidden'
+}
 </script>
 
 <style scoped>
+
 .iconFloat {
   font-size: 2.4rem;
   transform: translate(-50%, -50%);
@@ -178,6 +188,7 @@ window.addEventListener("load", () => {
 }
 .navbarLink {
   font-size: 15px;
+  font-family: "Poppins", sans-serif;
 }
 .logo {
   font-family: "Poppins", sans-serif;

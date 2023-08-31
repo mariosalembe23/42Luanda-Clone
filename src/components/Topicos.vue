@@ -1,7 +1,7 @@
 <template>
-  <section class="w-full">
+  <section class="w-full" id="topicos">
     <div class="text-center">
-      <h2 class="text-zinc-200 text-4xl font-bold">Tópicos</h2>
+      <h2 class="text-zinc-200 text-3xl md:text-4xl font-bold">Tópicos</h2>
       <div class="w-16 rounded-md mx-auto mt-5 bg-cyan-300 h-1"></div>
     </div>
 

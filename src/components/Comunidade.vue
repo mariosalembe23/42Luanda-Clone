@@ -1,8 +1,8 @@
 <script></script>
 
 <template>
-  <section class="w-full">
-    <h2 class="text-center text-zinc-200 text-4xl font-bold">
+  <section class="w-full" id="comunidade">
+    <h2 class="text-center text-zinc-200 text-3xl md:text-4xl font-bold">
       Junte-se á Comunidade!
     </h2>
     <div class="w-16 rounded-md mx-auto mt-5 bg-cyan-300 h-1"></div>
