@@ -89,7 +89,7 @@
       </div>
       <!-- BANNER -->
       <section class="w-full h-full flex items-center justify-center">
-        <div class="banner max-w-5xl w-full m-auto text-center p-5">
+        <div class="banner max-w-5xl w-full m-auto text-center p-3">
           <h1
             class="text-cyan-100 text-4xl md:text-4xl lg:text-6xl font-extrabold principalText"
           >
@@ -164,7 +164,7 @@ window.addEventListener("load", () => {
 }
 .navbarScroll {
   backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .header {
   background-image: url("/images/fundo.jpg");

@@ -5,11 +5,11 @@ import VantagensCard from "./VantagensCard.vue";
 <template>
   <section class="w-full">
     <div class="text-center mt-8">
-      <h2 class="text-zinc-200 text-4xl font-bold">Vantagens</h2>
+      <h2 class="text-zinc-200 text-4xl font-bold title">Quem Faz Enter, Faz Certo!</h2>
       <div class="w-16 rounded-md mx-auto mt-5 bg-cyan-300 h-1"></div>
       <!-- <p>Quem faz Enter, Faz Certo!</p> -->
     </div>
-    <div class="max-w-5xl m-auto w-full grid-cols-2 pb-32 grid gap-4 mt-12">
+    <div class="max-w-5xl m-auto w-full grid-cols-1 p-4  lg:grid-cols-2 pb-32 grid gap-4 mt-12">
       <VantagensCard
         iconName="bi bi-alarm iconVantagem text-white"
         tittle="Sem Horários, no seu Tempo!"
@@ -38,7 +38,7 @@ import VantagensCard from "./VantagensCard.vue";
       />
       <a href="#" class="transition-all hover:opacity-90">
         <div
-          class="bg-zinc-900 p-5 rounded-md h-44 ring-2 ring-indigo-400 grid grid-cols-6"
+          class="bg-zinc-900 p-5 rounded-md  ring-2 ring-indigo-400 grid grid-cols-6"
         >
           <div
             class="col-span-2 bg-indigo-600 rounded-md flex items-center justify-center"
@@ -49,7 +49,7 @@ import VantagensCard from "./VantagensCard.vue";
             <h4 class="text-indigo-300 font-semibold">
               Faça Parte Agora mesmo!
             </h4>
-            <p class="textInfo pt-1 text-white pb-3">
+            <p class="textInfo pt-1 text-white ">
               Não perca a oportunidade! Inscreva-se agora para fazer parte da
               nossa comunidade. Seja parte de algo incrível!
             </p>
@@ -70,5 +70,8 @@ import VantagensCard from "./VantagensCard.vue";
 }
 .link {
   font-size: 14px;
+}
+.title{
+  font-family: "Poppins", sans-serif;
 }
 </style>

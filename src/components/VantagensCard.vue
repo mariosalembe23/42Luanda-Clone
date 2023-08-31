@@ -8,7 +8,7 @@ defineProps({
 
 <template>
   <aside>
-    <div class="bg-zinc-900 p-5 rounded-md h-44 grid grid-cols-6">
+    <div class="bg-zinc-900 p-5 rounded-md  grid grid-cols-6">
       <div
         class="col-span-2 rounded-md flex items-center justify-center bg-cyan-600"
       >
