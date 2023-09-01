@@ -18,13 +18,13 @@
 
       <div class="p-5">
         <div class="flex justify-center items-center gap-4">
-          <a href="#" class="text-white transition-all hover:text-zinc-400 text-xl">
+          <a href="https://github.com/mariosalembe23" class="text-white transition-all hover:text-zinc-400 text-xl">
             <i class="bi bi-facebook"></i>
           </a>
-          <a href="#" class="text-white transition-all hover:text-zinc-400  text-xl">
+          <a href="https://www.instagram.com/mariosalembe22" class="text-white transition-all hover:text-zinc-400  text-xl">
             <i class="bi bi-instagram"></i>
           </a>
-          <a href="#" class="text-white transition-all hover:text-zinc-400 text-xl">
+          <a href="https://github.com/mariosalembe23" class="text-white transition-all hover:text-zinc-400 text-xl">
             <i class="bi bi-github"></i>
           </a>
         </div>
