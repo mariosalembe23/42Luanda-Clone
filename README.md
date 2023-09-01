@@ -33,7 +33,7 @@ Tipografia: Poppins, Inter
 # LINKS
 
 Repositório: https://github.com/mariosalembe23/42Luanda-Clone
-URL LIVE:
-![mariosalembe22](https://www.instagram.com/mariosalembe22)
-![mariosalembe](https://www.linkedin.com/in/m%C3%A1rio-salembe-093797246/)
-![mariosalembe](https://t.me/mariosalembe)
+URL LIVE: https://42luanda-clone.vercel.app/ |
+![Instagram](https://www.instagram.com/mariosalembe22) |
+![LinkedIn](https://www.linkedin.com/in/m%C3%A1rio-salembe-093797246/) |
+![Telegram](https://t.me/mariosalembe)
