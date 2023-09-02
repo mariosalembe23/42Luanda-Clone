@@ -59,7 +59,7 @@ import TutorialCard from "./TutorialCard.vue";
     <h2 class="pt-8 text-zinc-200 text-center text-2xl md:text-4xl font-bold selection">
       Processo de Seleção
     </h2>
-    <div class="mt-3 max-w-5xl w-full p-5 grid grid-cols-1 m-auto">
+    <div class="mt-3 max-w-5xl w-full p-3 grid grid-cols-1 m-auto">
       <TutorialCard
         tema="Inscrição Online"
         context=" A tua jornada até te tornares aprendiz na 42 Luanda começa com uma

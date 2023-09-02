@@ -45,7 +45,7 @@
           </svg>
         </button>
       </header>
-      <main class="p-5">
+      <main class="p-4">
         <div class="flex items-center justify-center text-zinc-300 gap-2">
           <h6 class="font-semibold">Ups!Sem Notificações</h6>
           <svg
@@ -61,7 +61,7 @@
             />
           </svg>
         </div>
-        <div class="text-center mt-5 px-3 w-full">
+        <div class="text-center mt-5 px-1 w-full">
           <small class="font-medium text-white">
             Aqui Estarão Todas as Novidades e Atualizações Relacionadas á Escola
             de Programação 42!
