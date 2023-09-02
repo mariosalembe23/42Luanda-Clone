@@ -5,6 +5,16 @@ function closeOffCanvas() {
   offCanvas.classList.remove("showOffCanvas");
   document.body.style.overflow = "auto";
 }
+
+function SpecialFunction() {
+  const offCanvas = document.querySelector(".offcanvas");
+  const messageComponent = document.querySelector(".back");
+  const CardMessage = document.querySelector(".card-message");
+  messageComponent.classList.remove("hidden");
+  CardMessage.classList.add("showCardMessage");
+  offCanvas.classList.remove("showOffCanvas");
+  document.body.style.overflow = "auto";
+}
 </script>
 <template>
   <div class="offcanvas z-30 p-6 relative lg:hidden inline-block">
@@ -131,9 +141,9 @@ function closeOffCanvas() {
             <i class="bi bi-chevron-right text-cyan-100"></i>
           </li>
           <li class="flex items-center justify-between w-full">
-            <a
-              @click="closeOffCanvas"
-              href="#FAQ"
+            <button
+              @click="SpecialFunction"
+              href="#"
               class="offLink transition-all hover:text-white text-cyan-50 font-medium flex items-center gap-2"
             >
               <svg
@@ -151,7 +161,7 @@ function closeOffCanvas() {
                 />
               </svg>
 
-              Notificações</a
+              Notificações</button
             >
             <i class="bi bi-chevron-right text-cyan-100"></i>
           </li>

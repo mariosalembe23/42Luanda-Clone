@@ -66,6 +66,7 @@
                   <a
                     href="#"
                     class="text-cyan-100 md:inline-block hidden transition-all hover:text-cyan-300"
+                    @click="openMessages"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -181,10 +182,12 @@
                 />
               </svg>
             </a>
+            <div />
           </div>
         </div>
       </section>
     </div>
+
     <!-- ICON FLUTUANT -->
 
     <svg
@@ -204,10 +207,12 @@
   </header>
 
   <offcanvas />
+  <Message />
 </template>
 
 <script setup>
 import Offcanvas from "./Offcanvas.vue";
+import Message from "./Message.vue";
 window.addEventListener("load", () => {
   const navbar = document.querySelector(".navbar");
 
@@ -232,6 +237,15 @@ function OpenOffCanvas() {
 
   offCanvas.classList.add("showOffCanvas");
   document.body.style.overflow = "hidden";
+}
+
+
+function openMessages(){
+  const messageComponent = document.querySelector(".back")
+  const CardMessage = document.querySelector(".card-message")
+  messageComponent.classList.remove("hidden")
+  CardMessage.classList.add("showCardMessage")
+  document.body.style.overflow = 'hidden'
 }
 </script>
 
